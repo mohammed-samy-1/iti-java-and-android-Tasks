@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bd518a6-1523-4215-92e5-f6c139c69fed" name="Changes" comment="iti tasks">
-      <change beforePath="$PROJECT_DIR$/src/LongestNameAndIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LongestNameAndIndex.java" afterDir="false" />
+    <list default="true" id="7bd518a6-1523-4215-92e5-f6c139c69fed" name="Changes" comment="longest name&#10;write a function to find the longest name in an array and print the name and its index">
+      <change afterPath="$PROJECT_DIR$/src/SwapWithoutTemp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.LongestNameAndIndex">
+}</component>
+  <component name="RunManager" selected="Application.SwapWithoutTemp">
     <configuration name="FunctionParameters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FunctionParameters" />
       <module name="untitled1" />
@@ -74,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwitchWithString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SwitchWithString" />
+    <configuration name="SwapWithoutTemp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SwapWithoutTemp" />
       <module name="untitled1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,11 +84,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SwapWithoutTemp" />
         <item itemvalue="Application.LongestNameAndIndex" />
         <item itemvalue="Application.Problem" />
         <item itemvalue="Application.MinAndMaxIndex" />
         <item itemvalue="Application.FunctionParameters" />
-        <item itemvalue="Application.SwitchWithString" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +106,9 @@
       <workItem from="1675241212483" duration="12051000" />
       <workItem from="1675267696824" duration="2768000" />
       <workItem from="1675283968654" duration="607000" />
-      <workItem from="1675325530084" duration="693000" />
+      <workItem from="1675325530084" duration="2694000" />
+      <workItem from="1675424444597" duration="5000" />
+      <workItem from="1675585061905" duration="1395000" />
     </task>
     <task id="LOCAL-00001" summary="iti tasks">
       <created>1675325696434</created>
@@ -114,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675325696434</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="longest name&#10;write a function to find the longest name in an array and print the name and its index">
+      <created>1675326475558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675326475558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +132,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="iti tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="iti tasks" />
+    <MESSAGE value="longest name&#10;write a function to find the longest name in an array and print the name and its index" />
+    <option name="LAST_COMMIT_MESSAGE" value="longest name&#10;write a function to find the longest name in an array and print the name and its index" />
   </component>
 </project>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/name"
+            tools:ignore="NestedWeights"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/password"
+            tools:ignore="NestedWeights"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:autofillHints="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/email"
+            tools:ignore="NestedWeights"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:autofillHints="" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btm_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="show name"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btm_name"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="show password"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_pass"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="show email"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

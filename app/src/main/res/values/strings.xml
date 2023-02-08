@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shared Preference</string>
+    <string name="first_number">first number</string>
+    <string name="save">Save</string>
+    <string name="second_number">second number</string>
+    <string name="none">No value</string>
+    <string name="save_to_shared_preference">Save to Shared Preference</string>
+    <string name="biew_result">Biew result</string>
+    <string name="even">Even</string>
+    <string name="odd">Odd</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Files task</string>
+    <string name="name">Name</string>
+    <string name="pu">public</string>
+    <string name="pr">private</string>
+    <string name="email">EMail</string>
+    <string name="password">Password</string>
+    <string name="internal_sorage">internal sorage</string>
+    <string name="external_storage">external storage</string>
+    <string name="folder">Folder</string>
+    <string name="save">save</string>
+    <string name="view_data">view data</string>
+    <string name="save_file">Save file</string>
+</resources>

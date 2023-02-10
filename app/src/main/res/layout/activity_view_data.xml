@@ -7,7 +7,21 @@
     android:background="#210155"
     tools:context=".ViewSPActivity">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read File"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -33,9 +47,7 @@
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
                 android:padding="8dp"
                 app:cardBackgroundColor="#00FFFFFF"
                 app:cardCornerRadius="5dp"
@@ -49,6 +61,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="16dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -67,6 +82,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/txtEmail"
                         style="@style/Widget.MaterialComponents.Button"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
@@ -116,6 +132,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/txtPass"
                         style="@style/Widget.MaterialComponents.Button"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
@@ -127,6 +144,7 @@
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <RadioGroup
                 android:id="@+id/radioGroup2"
                 android:layout_width="match_parent"
@@ -156,21 +174,78 @@
                     android:text="@string/external_storage"
                     android:textColor="?android:textColorHint" />
             </RadioGroup>
-            <Button
-                android:id="@+id/btn_b"
+
+            <LinearLayout
+                android:id="@+id/linear_internal_folder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:background="@drawable/bg"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxFolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/folder"
+                    android:textColor="?android:textColorHint" />
+
+                <EditText
+                    android:id="@+id/etFolderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autofillHints=""
+                    android:background="@drawable/bg"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg"
+                android:textColor="?android:textColorHint"
+                android:textOff="@string/pu"
+                android:textOn="@string/pr"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/bg"
+                android:text="Read File"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/bg"
-                android:text="back"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/cardView3"
-                app:layout_constraintStart_toStartOf="@+id/cardView3"
-                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

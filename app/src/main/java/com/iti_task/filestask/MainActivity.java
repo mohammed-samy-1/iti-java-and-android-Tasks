@@ -2,10 +2,12 @@ package com.iti_task.filestask;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.iti_task.filestask.databinding.ActivityMainBinding;
@@ -18,7 +20,7 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
-    private String TAG = "MainActivityTag";
+    private final String TAG = "MainActivityTag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 saveData();
             }
+        });
+
+        binding.checkBoxFolder.setOnCheckedChangeListener((buttonView, isChecked) -> {
+                binding.etFolderName.setEnabled(isChecked);
+        });
+
+        binding.btnNav.setOnClickListener(v -> {
+            startActivity(new Intent(this, ViewDataActivity.class));
+            finish();
         });
     }
 

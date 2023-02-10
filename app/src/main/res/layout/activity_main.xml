@@ -172,6 +172,7 @@
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/bg"
                 android:text="@string/save"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
 
             <Button
@@ -184,6 +185,7 @@
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/bg"
                 android:text="@string/view_data"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
 
         </LinearLayout>

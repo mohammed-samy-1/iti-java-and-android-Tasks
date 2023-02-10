@@ -5,10 +5,10 @@
     <string name="pr">private</string>
     <string name="email">EMail</string>
     <string name="password">Password</string>
-    <string name="internal_sorage">internal sorage</string>
+    <string name="internal_sorage">internal storage</string>
     <string name="external_storage">external storage</string>
     <string name="folder">Folder</string>
-    <string name="save">save</string>
-    <string name="view_data">view data</string>
-    <string name="save_file">Save file</string>
+    <string name="save">Save</string>
+    <string name="view_data">View Data</string>
+    <string name="save_file">Save File</string>
 </resources>

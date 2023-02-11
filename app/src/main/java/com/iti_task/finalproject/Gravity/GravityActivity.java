@@ -1,14 +1,18 @@
 package com.iti_task.finalproject.Gravity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.iti_task.finalproject.databinding.ActivityGravityBinding;
+
+import java.util.Objects;
 
 public class GravityActivity extends AppCompatActivity {
 
@@ -18,6 +22,7 @@ public class GravityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityGravityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         initListeners();
     }
 
@@ -111,5 +116,10 @@ public class GravityActivity extends AppCompatActivity {
 
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        onBackPressed();
+        return true;
     }
 }

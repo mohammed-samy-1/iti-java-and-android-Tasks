@@ -1,14 +1,18 @@
 package com.iti_task.finalproject.Log;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.iti_task.finalproject.databinding.ActivityLogBinding;
+
+import java.util.Objects;
 
 public class LogActivity extends AppCompatActivity {
 
@@ -20,6 +24,7 @@ public class LogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityLogBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         binding.button3.setOnClickListener(v -> {
             if (binding.etLog.getText().toString().isBlank()) {
@@ -45,5 +50,10 @@ public class LogActivity extends AppCompatActivity {
                     break;
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        onBackPressed();
+        return true;
     }
 }

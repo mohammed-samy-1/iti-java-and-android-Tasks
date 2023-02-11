@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.iti_task.finalproject.R;
 import com.iti_task.finalproject.databinding.ActivityToastBinding;
@@ -19,6 +20,12 @@ public class ToastActivity extends AppCompatActivity {
         binding = ActivityToastBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        binding.button3.setOnClickListener(v -> {
+            if (binding.etLog.getText().toString().isBlank()){
+                return;
+            }
+            Toast.makeText(this, binding.etLog.getText().toString(), Toast.LENGTH_SHORT).show();
+        });
     }
 
     @Override

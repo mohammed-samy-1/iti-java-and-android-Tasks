@@ -12,6 +12,24 @@
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".FileIOActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreference.ViewSpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreference.SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Intent.IntentActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Intent.IntentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LifeCycleActivity"
+            android:exported="false" />
+        <activity
             android:name=".Gravity.GravityActivity"
             android:exported="false" />
         <activity

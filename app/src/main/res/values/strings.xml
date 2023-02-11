@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Final project</string>
+    <string name="toast">Toast</string>
+    <string name="log">log</string>
+    <string name="enter_text_to_be_toasted">Enter text to be toasted</string>
+    <string name="next_section"><![CDATA[Next section >>]]></string>
+    <string name="_0">0</string>
+    <string name="x_sup_2_sup">x<sup><small>2</small></sup></string>
+    <string name="by_x"><sup><small>1</small></sup>/<sub><small>x</small></sub></string>
+    <string name="equal">=</string>
+    <string name="plus">+</string>
+    <string name="gravity">gravity</string>
+    <string name="calculator">calculator</string>
+    <string name="exit">exit</string>
+    <string name="textview">TextView</string>
+    <string name="note1"><b>note</b>  you can combine one of the vertical with one of the horizontal gravities
+    \nfor example : top-start , bottom-left</string>
+    <string-array name="logs">
+        <item>log-d</item>
+        <item>log-i</item>
+        <item>log-e</item>
+        <item>log-w</item>
+    </string-array>
+    <string-array name="gravity">
+        <item>gravity</item>
+        <item>center</item>
+        <item>center vertical</item>
+        <item>center horizontal</item>
+        <item>top</item>
+        <item>bottom</item>
+        <item>end  <small>(right in arabic left in english)</small></item>
+        <item>Start  <small>(left in arabic right in english)</small></item>
+    </string-array>
+    <string-array name="layout_gravity">
+        <item>layout gravity</item>
+        <item>center</item>
+        <item>center vertical</item>
+        <item>center horizontal</item>
+        <item>top</item>
+        <item>bottom</item>
+        <item>end  <small>(right in arabic left in english)</small></item>
+        <item>Start  <small>(left in arabic right in english)</small></item>
+    </string-array>
+</resources>

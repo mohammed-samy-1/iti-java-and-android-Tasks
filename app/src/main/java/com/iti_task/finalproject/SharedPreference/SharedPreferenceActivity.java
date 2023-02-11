@@ -1,13 +1,17 @@
 package com.iti_task.finalproject.SharedPreference;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.iti_task.finalproject.databinding.ActivitySharedPreferenceBinding;
+
+import java.util.Objects;
 
 public class SharedPreferenceActivity extends AppCompatActivity {
     public static final String NUM1 = "num1";
@@ -19,6 +23,7 @@ public class SharedPreferenceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySharedPreferenceBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         SharedPreferences preferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
         binding.btnNum1.setOnClickListener(v -> {
             SharedPreferences.Editor edit = preferences.edit();
@@ -43,5 +48,10 @@ public class SharedPreferenceActivity extends AppCompatActivity {
         binding.btnResult.setOnClickListener(v -> {
             startActivity(new Intent(this, ViewSpActivity.class));
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        onBackPressed();
+        return true;
     }
 }

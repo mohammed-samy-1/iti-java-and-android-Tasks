@@ -27,6 +27,7 @@ public class LifeCycleActivity extends AppCompatActivity {
         binding = ActivityLifeCycleBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         imageView = binding.imageView2;
+        Toast.makeText(this, "On create", Toast.LENGTH_SHORT).show();
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
     }

@@ -12,26 +12,37 @@
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
         <activity
-            android:name=".FileIOActivity"
-            android:exported="false" />
+            android:name=".FileIO.ViewDataActivity"
+            android:exported="false"
+            android:label="Read File"/>
+        <activity
+            android:name=".FileIO.FileIOActivity"
+            android:exported="false"
+            android:label="Write File"/>
         <activity
             android:name=".SharedPreference.ViewSpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/shared_preference"/>
         <activity
             android:name=".SharedPreference.SharedPreferenceActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/shared_preference"/>
         <activity
             android:name=".Intent.IntentActivity2"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/intent"/>
         <activity
             android:name=".Intent.IntentActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/intent"/>
         <activity
             android:name=".LifeCycleActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/lifecycle"/>
         <activity
             android:name=".Gravity.GravityActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/gravity"/>
         <activity
             android:name=".calculator.CalculatorActivity"
             android:exported="false"
@@ -46,8 +57,7 @@
             android:label="@string/toast" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/log">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

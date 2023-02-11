@@ -40,6 +40,9 @@
     <string name="biew_result">View result</string>
     <string name="even">Even</string>
     <string name="odd">Odd</string>
+    <string name="read_file">Read File</string>
+    <string name="back">Back</string>
+    <string name="file_io">File IO</string>
     <string-array name="logs">
         <item>log-d</item>
         <item>log-i</item>

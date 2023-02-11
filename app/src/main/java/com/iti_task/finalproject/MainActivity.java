@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.iti_task.finalproject.FileIO.FileIOActivity;
 import com.iti_task.finalproject.Gravity.GravityActivity;
 import com.iti_task.finalproject.Intent.IntentActivity;
 import com.iti_task.finalproject.Intent.IntentActivity2;
@@ -53,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
         binding.button10.setOnClickListener(v -> {
             startActivity(new Intent(this , SharedPreferenceActivity.class));
         });
+        binding.button11.setOnClickListener(v -> {
+            startActivity(new Intent(this , FileIOActivity.class));
+        });
+        binding.exit.setOnClickListener(v -> finish());
     }
 
 

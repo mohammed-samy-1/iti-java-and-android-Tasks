@@ -2,6 +2,7 @@ package com.iti_task.finalproject.Intent;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
@@ -10,6 +11,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -18,6 +20,7 @@ import com.iti_task.finalproject.databinding.ActivityIntentBinding;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class IntentActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> launcher;
@@ -29,6 +32,7 @@ public class IntentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityIntentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         initLaunchers();
         initOnCLick();
     }
@@ -84,5 +88,10 @@ public class IntentActivity extends AppCompatActivity {
                     break;
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        onBackPressed();
+        return true;
     }
 }

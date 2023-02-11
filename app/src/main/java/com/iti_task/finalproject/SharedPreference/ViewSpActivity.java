@@ -4,16 +4,20 @@ import static com.iti_task.finalproject.SharedPreference.SharedPreferenceActivit
 import static com.iti_task.finalproject.SharedPreference.SharedPreferenceActivity.NUM2;
 import static com.iti_task.finalproject.SharedPreference.SharedPreferenceActivity.PREF_NAME;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.iti_task.finalproject.R;
 import com.iti_task.finalproject.databinding.ActivityViewSpBinding;
+
+import java.util.Objects;
 
 public class ViewSpActivity extends AppCompatActivity {
 
@@ -27,7 +31,7 @@ public class ViewSpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityViewSpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         SharedPreferences preferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
         num1 = preferences.getInt(NUM1, Integer.MIN_VALUE);
         num2 = preferences.getInt(NUM2, Integer.MIN_VALUE);
@@ -61,6 +65,11 @@ public class ViewSpActivity extends AppCompatActivity {
             onBackPressed();
         });
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        onBackPressed();
+        return true;
     }
 
 }
